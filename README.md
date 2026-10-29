@@ -1,6 +1,6 @@
 # Week 2: House Price Regression
 
-This project uses three  notebooks to predict house sale prices in USD from Kaggle's House Sales in King County, USA dataset:
+This project uses three notebooks to predict house sale prices in USD from Kaggle's House Sales in King County, USA dataset:
 
 - `Dataset_clean.ipynb` downloads and cleans the data, then saves `Cleaned_Datasets/house_sales_clean.csv`.
 - `Exploratory_data_analysis.ipynb` summarizes the cleaned data and displays plots.
@@ -23,4 +23,8 @@ python -m pip install -r requirements.txt
 
 Run the notebooks in this order: `Dataset_clean.ipynb`, `Exploratory_data_analysis.ipynb`, then `Model_Training.ipynb`. The model notebook uses a training-data heatmap to remove one feature from each pair above 0.85 absolute correlation. Its target is `price`; it reports test-set MAE, RMSE, and R-squared for each model.
 
-Internet access is needed to download the dataset. Kaggle may ask you to configure account access before the first download.# Week-2-Target-Regression--US-House-prediction
+Internet access is needed to download the dataset. Kaggle may ask you to configure account access before the first download.
+
+## Conclusion
+
+The three models were compared using test data. Elastic Net had the lowest MAE in this run, so it made the smallest average price errors.
